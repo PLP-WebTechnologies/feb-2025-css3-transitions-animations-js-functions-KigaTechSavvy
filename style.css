@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* Light and dark themes */
+  body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  /* Animated button */
+  #animate-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #animate-btn.clicked {
+    animation: pulse 0.5s;
+  }
+  
+  /* Keyframes for animation */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
